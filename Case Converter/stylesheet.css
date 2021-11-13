@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, serif;
+}
+
+.button {
+    font-size: 1em;
+    margin: 7px 15px 0 0;
+    background: orange;
+    border: none;
+    padding: 7px;
+    border-radius: 3px;
+}
+
+textarea {
+    width: 50%;
+    height: 400px;
+    font-size: 21px;
+    margin: 10px 0;
+    border:solid orange 3px;
+    border-radius: 3px;
+}
+
+.title {
+    font-size: 40px;
+    font-style: oblique;
+}
