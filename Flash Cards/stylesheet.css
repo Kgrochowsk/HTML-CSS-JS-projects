@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+body {
+    background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/BlankMap-World-Flattened.svg/2754px-BlankMap-World-Flattened.svg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#title {
+    text-align: center;
+    font-size: 41px;
+    text-decoration: underline;
+}
+
+#quizArea {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+    width: 750px;
+    height: 750px;
+    perspective: 1000px;
+}
+
+.card {
+    height: 200px;
+    width: 200px;
+    margin: 15px;
+    position: relative;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 6px;
+    position: absolute;
+}
+
+.front {
+    background-color: #ffdb9a;
+    color: #ff853b;
+    border: #ff853b 1px solid;
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color:  #ff853b;
+    color: #ffdb9a;
+    border: #ffdb9a 1px solid;
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.shadow {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: #c9c9c9;
+    backface-visibility: hidden;
+    transform: translate(4px, 4px);
+    z-index: -1;
+    border-radius: 6px;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+}
+
