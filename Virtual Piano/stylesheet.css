@@ -1,0 +1,80 @@
+body {
+    background: #3f8a3c;
+    font-family: 'Estonia', cursive;
+}
+
+#keys {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    margin: 10px;
+}
+
+.white-keys {
+    display: flex;
+    flex-direction: row;
+}
+
+.black-keys {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.key-white {
+    width: 75px;
+    height: 100px;
+    background: white;
+    border: gray solid 1px;
+    align-items: center;
+    text-align: center;
+    padding-top: 175px;
+    font-family: 'Estonia', cursive;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+
+.key-black {
+    height: 65px;
+    width: 40px;
+    background: black;
+    color: white;
+    border: solid gray 2px;
+    text-align: center;
+    padding-top: 75px;
+    font-family: 'Estonia', cursive;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+#W{
+    margin-left: 55px;
+}
+
+#E {
+    margin-left: 30px;
+}
+
+#T {
+    margin-left: 110px;
+}
+
+#Y {
+    margin-left: 35px;
+}
+
+#U {
+    margin-left: 35px;
+}
+
+.white-keys kbd,
+.black-keys kbd{
+    display: inline-block;
+}

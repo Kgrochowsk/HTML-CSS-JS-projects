@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Virtual Piano</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="Piano.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Estonia&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="keys">
+    <div class="container">
+        <div class="white-keys">
+            <kbd class="key-white" onkeydown="keyPressed()">A</kbd>
+            <kbd class="key-white" onkeydown="keyPressed()">S</kbd>
+            <kbd class="key-white" onkeydown="keyPressed()">D</kbd>
+            <kbd class="key-white" onkeydown="keyPressed()">F</kbd>
+            <kbd class="key-white" onkeydown="keyPressed()">G</kbd>
+            <kbd class="key-white" onkeydown="keyPressed()">H</kbd>
+            <kbd class="key-white" onkeydown="keyPressed()">J</kbd>
+        </div>
+        <div class="black-keys">
+            <kbd class="key-black" id="W" onkeydown="keyPressed()">W</kbd>
+            <kbd class="key-black" id="E" onkeydown="keyPressed()">E</kbd>
+            <kbd class="key-black" id="T" onkeydown="keyPressed()">T</kbd>
+            <kbd class="key-black" id="Y" onkeydown="keyPressed()">Y</kbd>
+            <kbd class="key-black" id="U" onkeydown="keyPressed()">U</kbd>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
