@@ -1,0 +1,66 @@
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 42px;
+}
+
+li {
+    list-style: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+input[type=checkbox]:checked + span {
+    text-decoration: line-through;
+}
+
+#container-top {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: end;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#task-list {
+    margin-left: 22%;
+    margin-right: 25%;
+}
+
+#input-task {
+    border: none;
+    border-bottom: 4px solid #6b5d78;
+    padding: 20px;
+    font-size: 21px;
+    width: 40vw;
+}
+
+#\#add-task-button {
+    background: #bb94c3;
+    color: white;
+    margin-left: 10px;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 50px;
+    width: 100px;
+}
+
+.delete-btn {
+    float: right;
+    background: red;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.task {
+    padding-left: 10px;
+}
